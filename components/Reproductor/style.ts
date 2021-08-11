@@ -45,6 +45,26 @@ export const SongImage = styled.div`
 
 export const Selector = styled.div`
   grid-area: SEL;
+  text-align:center;
+  >button{
+    background: none;
+    border:none;
+    font-size: 25px;
+    margin:0px 20px;
+    color: ${props=>props.theme.colors.white};
+    cursor: pointer;
+    transition: all .5s ease;
+    position: relative;
+    top: 0;
+    &.disabled{
+      color: ${props=>props.theme.colors.symbol};
+    }
+    &:hover{
+      /* box-shadow: rgba(0,0,0,0.2) 0px 10px 5px 13px; */
+      top: -3px;
+      color: ${props=>props.theme.colors.discord};
+    }
+  }
 `;
 
 export const Config = styled.div`
