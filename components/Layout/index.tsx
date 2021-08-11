@@ -1,5 +1,6 @@
 import React from 'react'
 import Menu from '../Menu';
+import Reproductor from '../Reproductor';
 import SideBar from '../SideBar';
 import { Children, Grid } from './style';
 
@@ -11,6 +12,7 @@ const Layout:React.FC = (props)=>{
         {props.children}
       </Children>
       <SideBar/>
+      <Reproductor/>
     </Grid>
   )
 };
