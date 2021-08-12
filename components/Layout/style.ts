@@ -12,5 +12,10 @@ export const Grid = styled.div`
 
 export const Children = styled.div`
   grid-area: FD;
-  padding: 15px 30px;
+  padding: 0px 30px;
+  height: 100%;
+  overflow-y: auto;
+  ::-webkit-scrollbar{
+    display:none;
+  }
 `;

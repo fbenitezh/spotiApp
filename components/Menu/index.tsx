@@ -3,18 +3,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { Container, Icon, Item, Navbar } from './style';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
  
 const Menu: React.SFC = () => {
+  const router = useRouter();
+  
   return (
     <Container>
       <Navbar>
-        <Item className="active">
+        <Item onClick={()=>router.push('/')} className={router.pathname == "/" ? 'active' : ''}>
           <Icon>
             <FontAwesomeIcon icon={faHome}/>
           </Icon>
           <p>Home</p>
         </Item>
-        <Item>
+        <Item onClick={()=>router.push('/search')} className={router.pathname == "/search" ? 'active' : ''}>
           <Icon>
             <FontAwesomeIcon icon={faSearch}/>
           </Icon>

@@ -9,6 +9,7 @@ export const Container = styled.div`
   align-items: center;
   box-shadow:rgba(0,0,0,0.2) 0px 10px 5px 13px;
   padding: 10px 15px;
+  z-index: 100;
 `;
 
 export const SongInfo = styled.section`
