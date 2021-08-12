@@ -33,7 +33,7 @@ export const Card = styled.div`
 
 export const FotoContainer = styled.div`
   height: 100%;
-  >img{
+  >div>img{
     width: 100%;
     height: 100%;
     object-fit: cover;

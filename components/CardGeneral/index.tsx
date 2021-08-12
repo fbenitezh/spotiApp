@@ -2,6 +2,8 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react'
 import { Card, FotoContainer, Info } from './style';
+import Image from 'next/image'
+import artista from '../../public/artista.jpeg';
 
 export interface CardGeneralProps {
   title:string,
@@ -18,7 +20,7 @@ const CardGeneral: React.SFC<CardGeneralProps> = (props) => {
   return (
     <Card onMouseEnter={handleHover} onMouseLeave={handleHover} className="animated fadeIn">
       <FotoContainer>
-        <img src="http://localhost:3000/artista.jpeg"/>
+        <Image src={artista} alt="artista" placeholder="blur"/>
       </FotoContainer>
       <Info>
         <h3>{props.title}</h3>
