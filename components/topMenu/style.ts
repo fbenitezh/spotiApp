@@ -31,6 +31,7 @@ export const DropdownList = styled.div`
   top: 70px;
   width: 187px;
   display: none;
+  z-index: 100;
   >p{
     border-radius: 2px;
     padding: 10px 7px;
