@@ -1,7 +1,8 @@
 import React from 'react'
 import Menu from '../Menu';
 import Reproductor from '../Reproductor';
-import SideBar from '../SideBar';
+import TopMenu from '../topMenu';
+//import SideBar from '../SideBar';
 import { Children, Grid } from './style';
 
 const Layout:React.FC = (props)=>{
@@ -9,9 +10,9 @@ const Layout:React.FC = (props)=>{
     <Grid>
       <Menu/>
       <Children>
+        <TopMenu/>
         {props.children}
       </Children>
-      <SideBar/>
       <Reproductor/>
     </Grid>
   )
